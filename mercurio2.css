@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root {
+    ---primarycolor: #c5734d;
+    ---secondcolor: rgba(50, 116, 186, 0.602);
+    ---thridcolor: #000000e0;
+
+    -fourthcolor: rgb(96, 96, 96);
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: rgb(241, 80, 241);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #000000;
+    /* padding: 10px 10px 5px 20px; */
+    /* z-index: 1; */
+    width: 100%;
+    max-width: 100%;
+    height: 20%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.buttons {
+    display: flex;
+    text-align: justify;
+    padding-left: 15px;
+    gap: 80px;
+    letter-spacing: 4px;
+}
+
+.buttons h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.navbar {
+    font-family: cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000ad;
+    transition: height 0.3s ease, visibility 0s linear 0.3s;
+    height: 150px;
+    width: 100vw;
+    z-index: 15;
+}
+
+.navbar h2 {
+    font-weight: 100;
+    font-family: arial;
+    color: #ffffff;
+    text-decoration: unset;
+
+}
+
+
+body {
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWoI6JlEZAawMsxq9nI3g5RJhwWVIjPlFksMmuURQvOfMC4KYCjIkznBS62YiqiTsbRULIwYv0uljsmMA7Txb50MKoHNZX37P5AJP-l7nw6Ge7E3XvPr5m0kxMyBJhL1vnO0ihNj22RYZssRZ97uW6JBv5FANG4bvqbmDrfFqJXhAMcnVQEH_dWDL3/s2560/Vista-de-Venus-sem-nuvens-em-3D-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    margin-top: 30px;
+    height: 1000px;
+    padding: 20px 10px 20px 10px;
+}
+
+img {
+    width: 110px;
+    height: 110px;
+    border-radius: 30%;
+
+}
+
+.caixaPlaneta {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 200;
+    justify-content: center;
+}
+
+
+.caixaPlaneta:hover {
+   filter: drop-shadow(10px 5px 4px #ababb456);
+   scale: 1.1;
+}
+.caixaPlaneta h2 {
+    margin-top: 10px;
+
+}
+
+.planeta {
+    text-align: center;
+    background-image: url(./img/mercury-3-unscreen.gif);
+    background-position: center;
+    border-radius: 90%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.planeta img {
+    width: 100%;
+    height: 300px;
+}
+
+.molduraP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px rgba(247, 247, 247, 0.175);
+    background: var(---thridcolor);
+    height: 100%;
+    width: 50vw;
+    margin: auto;
+    border-radius: 2%;
+}
+
+.titulo {
+    color: var(---primarycolor);
+    font-family: sans-serif;
+    display: flex;
+    align-items: top;
+    margin: 3%;
+    text-align: center;
+    justify-content: left;
+    padding: 15px;
+}
+
+h2 {
+    color: var(---primarycolor);
+    font-family: sans-serif;
+    top: 20%;
+    padding-left: 15px;
+}
+
+
+.lista {
+    text-decoration: none;
+    padding: 1%;
+    font-family: sans-serif;
+    list-style-type: none;
+    font-weight: 100;
+    padding-top: 28px;
+    padding-left: 15px;
+    margin-bottom: auto;
+    color: white;
+    line-height: 1.5em;
+}
+
+.texto {
+    color: rgb(147, 147, 147);
+    padding: 25px;
+    text-decoration: none;
+    line-height: 2.0em;
+    font-family: sans-serif;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    background-color: rgb(57, 40, 117);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    /* Permite que os itens do rodapé se ajustem */
+    font-family: sans-serif;
+    line-height: 2.0em;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column strong {
+    color: #c5734d;
+    
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.footer-column ul li {
+    margin-bottom: 1px;
+    
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    
+}
+
+
+
+/* Media queries para telas menores */
+@media (max-width: 480px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: #000000;
+        padding: 10px 10pc 5px 20px;
+        z-index: 1;
+        width: 100%;
+        height: 20%;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: end;
+        background-color: #ffffff00;
+        transition: height 0.3s ease, visibility 0s linear 0.3s;
+        height: 100%;
+        width: 100vw;
+        z-index: 15;
+    }
+
+    .navbar img {
+        display: none;
+    }
+
+    body {
+        background: url(https://images.unsplash.com/photo-1465101162946-4377e57745c3?q=80&w=1478&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        height: 1000px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .molduraP {
+        flex: 1;
+        box-shadow: 8px 8px 8px rgba(255, 255, 255, 0.348);
+        background: var(---thridcolor);
+        height: auto;
+        width: 100%;
+        margin: 0;
+        border-radius: 2%;
+    }
+
+
+    .footer {
+        background-color: #333;
+        color: white;
+        /* text-align: center;
+        padding: 20px 0; */
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+
+    .footer h3 {
+        display: none;
+    }
+
+    .footer p {
+        text-align: center;
+        margin: auto;
+    }
+
+
+    .footer-column {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        width: 100%;
+        /* Cada coluna ocupa 100% da largura */
+        padding: 10px 0;
+    }
+}
